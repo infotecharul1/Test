@@ -1,3 +1,4 @@
+// Dynamic greeting based on time of day
 const greetingElement = document.getElementById("greeting");
 const currenthour = new Date().getHours();
 
@@ -13,6 +14,7 @@ if (currenthour < 12) {
 
 greetingElement.textContent = greetingMessage;
 
+// Back to top functionality
 function scrollToTop() {
   window.scrollTo({
     top: 0,

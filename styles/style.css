@@ -29,7 +29,7 @@ header {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: auto; /* Aligns the links to the right */
+  margin-left: auto;
 }
 
 .nav-links li {
@@ -48,6 +48,13 @@ header {
   font-size: 18px;
 }
 
+/* Container for main content */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 /* Home Section */
 .first-section {
   background-color: #a08600;
@@ -59,9 +66,9 @@ header {
   height: 100px;
   border-radius: 50%;
   border: 5px solid #4f4203;
-  /* border: 10px;
-  /* border-style: solid; */
-  /* border-color: rgb(221, 242, 30);  */
+  border: 10px;
+  border-style: solid;
+  border-color: rgb(183, 202, 11);
 }
 
 .first-section h1 {
@@ -93,8 +100,8 @@ header {
 }
 
 .large-profile-pic {
-  max-width: 500%;
-  height: 600px;
+  max-width: 100%;
+  height: 780px;
 }
 
 .text-content {
@@ -109,7 +116,7 @@ header {
 
 .language-section th,
 .language-section td {
-  border: 2px solid black;
+  border: 2px solid rgb(181, 14, 14);
   padding: 8px;
 }
 
@@ -130,10 +137,12 @@ header {
   margin: 0 10px;
 }
 
-/* responsive design */
+/* Responsive design */
 @media (max-width: 768px) {
+  .first-section,
   .second-section {
     flex-direction: column;
+    align-items: center;
   }
 }
 
