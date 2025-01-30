@@ -59,14 +59,14 @@ header {
 .first-section {
   background-color: #a08600;
   text-align: center;
-  padding: 10px 20px;
+  padding: 20px;
 }
 
 .profile-pic {
   height: 100px;
   border-radius: 50%;
   border: 5px solid #4f4203;
-  border: 10px;
+  /* border: 10px; */
   border-style: solid;
   border-color: rgb(183, 202, 11);
 }
@@ -74,16 +74,20 @@ header {
 .first-section h1 {
   font-size: 2.5rem;
   color: white;
+  margin: 0;
 }
 
 .subtitle {
   font-size: 1.5rem;
-  color: white;
+  color: rgb(210, 206, 205);
+  margin: 10px 0;
 }
 
 .description {
   font-size: 1.2rem;
   color: rgb(12, 12, 246);
+  margin: 0;
+  grid-column: 1 / -1;
 }
 
 /* About Section */
@@ -109,19 +113,30 @@ header {
 }
 
 /* language-section */
+.language-section {
+  margin: 20px 0;
+}
+
+.language-section h2 {
+  margin-bottom: 10px;
+}
+
 .language-section table {
   width: 100%;
   border-collapse: collapse;
+  font-size: 0.9em;
 }
 
 .language-section th,
 .language-section td {
-  border: 2px solid rgb(181, 14, 14);
+  border: 1px solid #ddd;
   padding: 8px;
+  text-align: left;
 }
 
 .language-section th {
-  background-color: #d7d869;
+  background-color: #ecd3d3;
+  font-weight: bold;
 }
 
 /* Footer */
